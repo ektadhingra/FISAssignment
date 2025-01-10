@@ -1,0 +1,50 @@
+{
+  "name": "codecept-automation",
+  "version": "1.0.0",
+  "description": "A custom end-to-end testing framework built with CodeceptJS, including various utilities and reporting tools.",
+  "scripts": {
+    "test:tag": "codeceptjs run --steps --grep '@tag'",
+    "test:all": "codeceptjs run --steps",
+    "test:parallel": "npx codeceptjs run-workers 4",
+    "create:stepdefinition": "npx codeceptjs gherkin:snippets",
+    "test:feature": "codeceptjs run --features --steps"
+  },
+  "dependencies": {
+    "allure": "^0.0.0",
+    "allure-codeceptjs": "^2.12.2",
+    "allure-commandline": "^2.30.0",
+    "axios": "^1.7.7",
+    "codeceptjs": "^3.6.10",
+    "codeceptjs-assert": "^0.0.5",
+    "dotenv": "^16.4.5",
+    "intellisense": "^0.0.1",
+    "jsonpath": "^1.1.1",
+    "mocha-reporter": "^0.1.1",
+    "openai": "^4.56.1",
+    "playwright": "^1.45.3",
+    "querystring": "^0.2.1",
+    "touch": "^3.1.1"
+  },
+  "devDependencies": {
+    "replace-all": "^1.0.0"
+  },
+  "keywords": [
+    "codeceptjs",
+    "e2e",
+    "testing",
+    "automation",
+    "framework"
+  ],
+  "license": "Belong to Ekta",
+  "files": [
+    "features/",
+    "helpers/",
+    "locators/",
+    "step_definitions/",
+    "uploads/",
+    ".env",
+    "codecept.conf.js",
+    "steps_file.js",
+    "steps.d.ts"
+  ]
+}
